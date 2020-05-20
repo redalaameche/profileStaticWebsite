@@ -1,0 +1,235 @@
+*{
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Lato",Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   font-weight: 300;
+   --base-color:#FFC312
+   
+
+}
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+  }
+.row2 {
+    max-width: 800px;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+  }
+.section-main{
+    background-image:linear-gradient(180deg,rgb(0, 0, 0,0.7),rgb(0, 0, 0,0.7)) ,  url('../assets/main-bg.jpg');
+    background-size: cover ;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
+.nav-main{
+ text-align: center;
+ padding-top: 20px;
+}
+.nav-main li{
+    display: inline-block;
+    margin-left:20px ;
+    padding: 10px;
+    /* border: yellow 1px solid; */
+    /* transition: border-bottom 0.3s; */
+}
+.nav-main a{
+text-decoration: none;
+color: white;
+}
+.nav-main li:hover{
+border-bottom: var(--base-color) 1px solid;
+}
+.floating-links{
+    max-width: 200px;
+    position: absolute;
+    left: 15;
+    top:50%;
+    transform: translate(0,-50%);
+    /* border: yellow 1px solid; */
+}
+.nav-links li{
+   list-style: none;
+   margin-bottom: 13px;
+}
+.nav-links i:hover{
+color: var(--base-color);
+transform: scale(1.2);
+}
+.nav-links i{
+color: white;
+ }
+
+.typewriter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+
+.typewriter h2 {
+    font-size: 1.4em;
+    font-weight: 400;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--base-color); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end) infinite,
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: yellow; }
+  }
+
+/* About ME */
+
+.profile{
+    max-width: 50%;
+    margin-top: 25px;
+    text-align: center;
+    color:black;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+   0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+   0 12.5px 10px rgba(0, 0, 0, 0.06),
+   0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+   0 100px 80px rgba(0, 0, 0, 0.12);
+   margin-bottom: 15px;
+  
+   
+}
+.profile img{
+    text-align: center;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    /* border: 5px solid #222222; */
+    box-shadow: 
+     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    margin-bottom: 25px;
+    
+}
+.profile h2{margin-bottom: 5px;}
+
+.contact{
+    margin-top:25px ;
+    /* float: left; */
+    text-align: left;
+}
+.contact ul {
+   list-style: none;
+   padding: 20px;
+  /* background-color: teal; */
+}
+.contact li {
+display: block;
+margin-left: 15px;
+padding-bottom: 8px;
+/* align-items: center; */
+}
+.contact b {
+display: inline-block;
+margin-left: 12px;
+ }
+.contact a {
+text-decoration: none;
+color: black;
+ }
+/* Technologie section */
+.section-tech{
+padding-top: 80px;
+}
+
+.coding{
+width: 50%;
+float: left;
+/* border: blue 5px solid; */
+text-align: center;
+}
+.coding img{
+    width: 60%;
+    height: auto;
+}
+.tech{
+    
+    width: 50%;
+    float: left;
+    /* border: red 5px solid; */
+    padding:20px
+}
+.tech ul{
+    list-style: none;
+    padding: 0;
+    
+}
+.tech li{
+    margin-bottom: 20px;
+    
+    
+}
+.colored{
+    font-size: 3em;
+}
+
+/* Progress Bar */
+.progress-bar {
+    margin-left: 15px;
+	border-radius: 60px;
+	overflow: hidden;
+  width: 70%;
+  display: inline-block;
+
+}
+.progress-bar span{
+    display: block;
+}
+.bar {
+  background:#555;
+}
+.progress {
+  /* animation: loader 8s ease infinite; */
+ background: var(--base-color);
+  color: #fff;
+  padding: 5px;
+  width: 80%;
+}
+#p1{
+    width: 80%;
+}
+#p2{
+    width: 70%;
+}
+#p3{
+    width: 80%;
+}
+#p4{
+    width: 50%;
+}
